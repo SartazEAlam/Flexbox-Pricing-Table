@@ -1,0 +1,97 @@
+html{
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;   /* ✅ stops repeating */
+  background-position: center;
+  background-attachment: fixed
+}
+body {
+  font-family: "Sono", sans-serif;
+  overflow-y: auto;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.plan-price {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.plan-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 20px 20px 0px 0px;
+  padding: 5px;
+  margin: 0px -20px 0px -20px;
+}
+.pricing-plan {
+  flex: 1;
+  text-align: center;
+  min-width: 350px;
+  max-width: 400px;
+  border-radius: 20px;
+  padding: 0px 20px 20px 20px;
+}
+.plan-features li {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-left: -40px;
+}
+.basic {
+  background-image: linear-gradient(rgb(6, 6, 244), rgb(4, 194, 246));
+}
+.standard {
+  background-image: linear-gradient(rgb(251, 0, 0), rgb(234, 4, 246));
+}
+.premium {
+  background-image: linear-gradient(rgb(255, 251, 0), rgb(87, 169, 24));
+}
+.plan-button {
+  color: white;
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #1b1212;
+}
+@media (max-width: 1250px) {
+  html, body {
+    height: 100%;
+  }
+  .plan-title{
+    font-size: 3rem;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  .plan-features li {
+    font-size: 2rem;;
+  margin-bottom: 40px;;
+}
+  .pricing-plan {
+  min-width: 500px;
+  max-height: 530px;
+}
+.plan-price{
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.plan-button {
+  font-size: 2rem;
+}
+  .pricing-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
